@@ -1,0 +1,281 @@
+
+body{
+        overflow-x: hidden;
+
+}
+
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+.flag-img {
+    display: flex;
+    margin-top: 10px;
+    width: 50px; /* Adjust the size of the flag */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bannerweb{
+    background-image: url("../imagenes/banner.png");    
+    background-position: center;
+    background-size: cover;   
+    /*altura total */ 
+    height: 100vh;
+    /* profundidad */
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678);
+    background-color:rgba(26, 6, 6, 0.486);
+    background-blend-mode: multiply; 
+}
+
+.centrado{
+    text-align: center;
+}
+
+.bajar1{
+    padding-top: 250px;
+}
+.bajar2{
+    padding-top: 50px;
+}
+.bajar3{
+    padding-top: 300px;
+}
+.bajar4{
+    padding-top: 50px;
+}
+
+
+h1{
+    color:#fff;    
+    font-size: 70px;
+    font-family: Impact;
+    text-shadow: 2px 2px 4px #74410a;
+}
+h2{
+    color:#fff;
+    font-size: 50px;
+    font-family: Impact;
+    text-shadow: 2px 2px 4px #74410a;
+}
+h3{
+    color:#fbfafa;
+    font-size: 30px;
+
+}
+.color1{
+    color:#fff;
+}
+p{
+    font-size: 20px;
+    /*superior/inferior  izq-dere*/
+    margin:40px 100px;
+    text-align: justify;
+}
+
+
+/*botones*/
+/* General button styling */
+/* General button styling */
+/* Container to hold "Seleccionar Destino" and buttons */
+.destino-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Adjust to your section height if needed */
+}
+
+/* Buttons container */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between buttons */
+    margin-top: 20px; /* Space between text and buttons */
+}
+
+/* General button styling */
+
+.botones {
+    width: 150px;
+    height: 35px; /* Increased height for better readability */
+    border: 3px solid #fffafa;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: Impact;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    transition: all linear 0.2s;
+    border-radius: 24px;
+    text-align: center;
+    display: inline-block; /* Ensures buttons align properly */
+} 
+
+/* Additional styles for two different button variations */
+.boton1 {
+    background-color: #a1865f;
+    color: #fff;
+    border-color: #fffafa;
+}
+
+.boton2 {
+    background-color: #fff;
+    color: #a1865f;
+    border-color: #a1865f;
+}
+
+.boton3 {
+    background-color: #fff;
+    color: #71706e;
+    border-color: #ffffff;
+}
+/* Hover effects */
+.boton1:hover {
+    background-color: #fff;
+    color: #a1865f;
+}
+
+.boton2:hover {
+    background-color: #a1865f;
+    color: #fff;
+}
+
+.boton3:hover {
+    background-color: #fff;
+    color: #71706e;
+}
+/* Centering the buttons and ensuring spacing */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 2mm; /* Ensures a small gap between buttons */
+    margin-top: 40px; /* Adds spacing between buttons and other elements */
+}
+
+.botones:hover {
+    width: 150px;
+    height: 25px;
+    background-color: #ffffff;
+    color: #a4a3a2;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all linear 0.2s;
+    border-radius: 24px;
+    text-align: center;
+    padding: 6px 25px;
+    text-shadow: 0px 1px 0px #ffffff;
+    display: inline-block; /* Ensures buttons align properly */
+}
+.fixed-button {
+    position: fixed;
+    top: 30px; /* Ajusta la posición vertical según sea necesario */
+    left: 30px; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 1000; /* Asegura que el botón esté por encima del video */
+}
+
+.fixed-text {
+    position: fixed;
+    top: 50px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Asegura que el texto esté por encima del video */
+    color: #fff;
+    font-size: 40px;
+    font-family: Impact;
+    text-shadow: 2px 2px 4px #696868;
+}
+
+/*formulario*/
+.configform2 {    
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the form vertically */
+    height: 100vh; /* Takes full viewport height */
+    color: #fff;
+    flex-direction: column;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+fieldset {
+    border: none; /* Remove default border */
+}
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.centrado2 {
+    display: flex;
+    flex-direction: column;
+    padding: 110px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px; /* Adjusts width to avoid stretching */
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevents label from breaking into two lines */
+}
+
+.form-control {
+    font-size: 15px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+ label{
+    font-size: 24px;   
+    float: left;
+ }
+ /*controles input*/
+
+footer{    
+    background-color: #000;
+    padding:20px 20px;
+}
+.formatospie{
+    color:#fff;
+    font-size: 24px;
+}
+
+/*lo pone a todo lo ancho*/
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
