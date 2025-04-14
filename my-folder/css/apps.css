@@ -1,0 +1,31 @@
+    body {
+        overflow-x: hidden;
+    }
+        
+    #container_principal {
+        height: 100vh;    
+        /*width: 2000px;
+        height: 650px;*/
+        font-family: Arial, sans-serif;
+    }
+   .cursor {
+        cursor: pointer;
+    }
+    
+    header {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        width: 100%;
+    } 
+    footer {
+        padding: 30px;        
+    }
+        header h1 {
+        text-align: center;
+    }
+        footer h2 {
+        text-align: center;
+    }
+    .fondo {
+        background-color: #7ba228;
+    }
