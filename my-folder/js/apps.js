@@ -35,13 +35,19 @@ panorama.add(infospot1);
 var infospot2 = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
 // establecen las coordenadas x, y y z posicion, tridimensional del infospot dentro de la panoramica. Por ejemplo, x = 0, y = 0 y z + -500
 
-infospot2.position.set(-91, -6, 500); //(-91 ,-6 , 500)
+infospot2.position.set(-148, 25, 500); //(-91 ,-6 , 500) (-148 ,25 , 500)
 //-60 segundos indica que el teexto permanecera hasta que el usuario lo cierra manualmente
-infospot2.addHoverText('Una impresora es un dispositivo periférico de salida del ordenador que permite producir una gama permanente de textos o gráficos de documentos almacenados en un formato electrónico, imprimiéndolos en medios físicos, normalmente en papel, utilizando cartuchos de tinta o tecnología láser (con tóner).', -60);
+infospot2.addHoverText('Selva Maya', -60);
+
+//
 
 //permite agregar la apariencia visual del cuadro 
-infospot2.element.innerHTML = '<dive style="background-color: rgba(0, 0,0, 0.8); border-radius: 5px; width: 200px; font-size: 14px; color: #fff; padding: 10px; font-size: 14px; width: 200px">; Una impresora es un dispositivo periférico de salida del ordenador que permite producir una gama permanente de textos o gráficos de documentos almacenados en un formato electrónico, imprimiéndolos en medios físicos, normalmente en papel, utilizando cartuchos de tinta o tecnología láser (con tóner).</div>';
-
+infospot2.element.innerHTML = `
+  <div style="background-color: rgba(0, 0, 0, 0.8); border-radius: 5px; width: 280px; color: #fff; padding: 10px; font-size: 14px;">
+    <strong>Selva Maya, </strong> Asi se llama la gran región forestal que se extiende hasta los vecinos México y Belice. El Parque Nacional Tikal está ubicado en la provincia de Petén, al norte de Guatemala, dentro de esta Selva. 
+    <br>
+  </div>
+`;
 panorama.add(infospot2);
 
 //3er infospot
@@ -127,6 +133,94 @@ viewer = new PANOLENS.Viewer({
 	autoHideInfospot: false
 });
 
+//crea y agrega el primer infospot --- Maya 1
+
+var infospot7 = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
+// establecen las coordenadas x, y y z posicion, tridimensional del infospot dentro de la panoramica. Por ejemplo, x = 0, y = 0 y z + -500
+
+infospot7.position.set(499 ,405 , 172); // 
+//-60 segundos indica que el teexto permanecera hasta que el usuario lo cierra manualmente
+infospot7.addHoverText('Maya3', -60);
+
+//permite agregar la apariencia visual del cuadro 
+infospot7.element.innerHTML = `
+  <div style="background-color: rgba(0, 0, 0, 0.8); border-radius: 5px; width: 280px; color: #fff; padding: 10px; font-size: 14px;">
+  <strong>Explora el majestuoso Templo IV,</strong> la estructura más alta de Tikal, desde donde podrás admirar un amanecer inolvidable sobre la selva maya.
+    <br>
+  </div>
+`;
+panorama.add(infospot7);
+
+
+//infospot8
+
+//crea y agrega el primer infospot --- Maya 1
+
+var infospot8 = new PANOLENS.Infospot(30, PANOLENS.DataImage.Info);
+// establecen las coordenadas x, y y z posicion, tridimensional del infospot dentro de la panoramica. Por ejemplo, x = 0, y = 0 y z + -500
+
+infospot8.position.set(-442 ,-182 , 500); // (-442 ,-182 , 500) (131 ,21 , 500)
+//-60 segundos indica que el teexto permanecera hasta que el usuario lo cierra manualmente
+infospot8.addHoverText('Maya3', -60);
+
+//permite agregar la apariencia visual del cuadro 
+infospot8.element.innerHTML = `
+  <div style="background-color: rgba(0, 0, 0, 0.8); border-radius: 5px; width: 280px; color: #fff; padding: 10px; font-size: 14px;">
+    <strong>Adventura Maya, </strong> se parte de los 120,000 y 180,000 visitantes que llegan a Tikal cada año.
+    <br>
+  </div>
+`;
+panorama.add(infospot8);
+
+
+//infospot9
+
+//crea y agrega el primer infospot --- Maya 1
+
+var infospot9 = new PANOLENS.Infospot(30, PANOLENS.DataImage.Info);
+// establecen las coordenadas x, y y z posicion, tridimensional del infospot dentro de la panoramica. Por ejemplo, x = 0, y = 0 y z + -500
+
+infospot9.position.set(-66 ,-130 , 500)
+//-60 segundos indica que el teexto permanecera hasta que el usuario lo cierra manualmente
+infospot9.addHoverText('Maya3', -60);
+
+//permite agregar la apariencia visual del cuadro 
+infospot9.element.innerHTML = `
+  <div style="background-color: rgba(0, 0, 0, 0.8); border-radius: 5px; width: 280px; color: #fff; padding: 10px; font-size: 14px;">
+   <strong>Descubre las enigmáticas estelas de Tikal,</strong> monumentos de piedra que narran la historia de reyes mayas y sus rituales sagrados.
+    <br>
+  </div>
+`;
+panorama.add(infospot9);
+
+
+//infospot9
+
+//crea y agrega el primer infospot --- Maya 1
+
+var infospot10 = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
+// establecen las coordenadas x, y y z posicion, tridimensional del infospot dentro de la panoramica. Por ejemplo, x = 0, y = 0 y z + -500
+
+infospot10.position.set(349 ,106 , -500)
+//-60 segundos indica que el teexto permanecera hasta que el usuario lo cierra manualmente
+infospot10.addHoverText('Horario', -60);
+
+//permite agregar la apariencia visual del cuadro 
+infospot10.element.innerHTML = `
+<div style="background-color: rgba(0, 0, 0, 0.8); border-radius: 5px; width: 280px; color: #fff; padding: 10px; font-size: 14px;">
+  <strong>Horarios del Parque Nacional Tikal:</strong><br><br>
+  -Horario regular: 6:00 a.m. a 6:00 p.m.<br>
+  -Tour Amanecer: 4:00 a.m. a 6:00 a.m.<br>
+  -Tour Atardecer: 6:00 p.m. a 8:00 p.m.<br><br>
+</div>
+`;
+
+infospot10.addEventListener('click', function() {
+  window.open("https://boletos.culturaguate.com/", "_blank");
+});
+
+
+panorama.add(infospot10);
 
 viewer.add(panorama);
 
