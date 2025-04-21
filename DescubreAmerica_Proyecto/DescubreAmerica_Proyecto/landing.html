@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Travel</title>
+    <meta charset="utf-8">
+    <link href="imagenes/t.png" rel="icon">      
+    <link href="css/index.css" rel="stylesheet">    
+  </head>  
+
+<body>
+<!-- Placeholder for language selector -->
+<div id="lang-container"></div>
+
+<!-- Script to load it -->
+<script>
+  fetch('lang-selector.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('lang-container').innerHTML = data;
+    });
+</script>
+
+  <section class="centrado bannerweb">
+    <div class="destino-container">
+      <h2 class="color1">Seleccionar Producto Digital</h2>
+          <!-- aqui van los enlaces del sitio y la aplicación web -->       
+          <div class="botones-container">
+            <a href="inicio.html" class="botones">Sitio</a>          
+            <a href="apps.html" class="botones">Aplicación</a>     
+          </div>
+      </div>
+      
+      </div>
+      </div>      
+  </section>
+
+
+</body>
+</html>
+

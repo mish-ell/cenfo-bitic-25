@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Travel</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="imagenes/t.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<!-- Placeholder for language selector -->
+<div id="lang-container"></div>
+
+<!-- Script to load it -->
+<script>
+  fetch('lang-selector-index.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('lang-container').innerHTML = data;
+    });
+</script>
+
+    <section class="bannerweb">
+      <div class="centrado bajar1">
+        <h1>Descubre América</h1>
+        <a href="login.html" class="botones">Entrar</a>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Travel</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="imagenes/t.png" type="image/png"> 
+    <link href="css/inicio.css" rel="stylesheet">
+
+            <!-- libreria de animacion -->
+            <link href="css/animate.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+  </head>  
+
+
+<!-- Placeholder for language selector -->
+<div id="lang-container"></div>
+
+<!-- Script to load it -->
+<script>
+  fetch('lang-selector.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('lang-container').innerHTML = data;
+    });
+</script>
+  
+  <body>
+
+     <!-- encabezado -->
+     <header>
+      <h1>Descubre America</h1>
+      <br>
+    </header>
+
+
+  <!-- aqui va el menu -->
+    <nav>
+      <ul class="desactivar">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="costarica.html">Costa Rica</a></li>
+          <li><a href="bolivia.html">Bolivia</a></li>
+          <li><a href="chile.html">Chile</a></li>
+          <li><a href="peru.html">Peru</a></li>
+          <li><a href="apps.html">Tour Maya</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+    </nav>
+
+               <!-- Contenedor de Descripcion -->
+               <section>
+                <div id="maps-container">
+                  <h2>Bolivia: Un tesoro en el corazón de Sudamérica</h2>
+        
+              </section>
+          
+    
+            <section>
+                  <div class="centrado"> 
+                  <p class="margen">
+                    Bolivia brilla con su inigualable riqueza natural y cultural. Desde los picos nevados de los Andes hasta la inmensidad del Salar de Uyuni, donde el cielo y la tierra se fusionan en un espectáculo surrealista, este país es un paraíso para los viajeros. Su gente, orgullosa de sus raíces indígenas, mantiene vivas tradiciones ancestrales reflejadas en su música, vestimenta y festividades. Bolivia no es solo un destino, es una experiencia que despierta los sentidos y deja una huella imborrable en el alma. 
+                  </p>
+                  </section>
+    
+        <section>
+      <div class="contenedor-principal">
+        <div class="caja">
+          <img src="imagenes/lagunaverde.png" alt="Laguna Verde" width="100%" height="300" onclick="abrirImagen(this)">
+        </div>
+        <div class="caja">
+          <img src="imagenes/altiplano.png" alt="Altiplano" width="100%" height="300" onclick="abrirImagen(this)">
+        </div>
+        <div class="caja">
+          <img src="imagenes/hotsprings.png" alt="Aguas Termales" width="100%" height="300" onclick="abrirImagen(this)">
+        </div>
+
+        <div class="caja">
+          <img src="imagenes/salar.png" alt="Salar" width="100%" height="300" onclick="abrirImagen(this)">
+        </div>
+
+        
+      </div>
+      <section>
+        <h3 class="centrado"> ¡Descúbrela y maravíllate con su magia!  </h3>
+        <br>
+      <div class="centrado">
+          <a class="botones boton3" href=https://www.rutaverdebolivia.com/es/" target="blank">Ver más</a>
+
+        </div>
+        <div class="bajar1">  </div>
+      </section>
+
+  
+  <!-- Coloca el script justo antes del cierre de la etiqueta body -->
+  <script>
+    function abrirImagen(img) {
+      const confirmar = confirm("¿Deseas ver la imagen en pantalla completa?");
+      if (confirmar) {
+        window.open(img.src, '_blank');
+      }
+    }
+  </script>
+
+      <!-- Contenedor de Cultura -->
+      <section>
+        <div id="maps-container">
+          <h2>Conoce su Cultura</h2>
+
+      </section>
+
+    <!-- Contenedor de Mapa -->
+
+      <section>
+        <div id="maps-container">
+          <h2>Explora Bolivia</h2>
+          <div id="map"></div>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Y0vv2PTVdEtvNlcjxlesxjP3f69G3Pg&callback=initMap&v=weekly&solution_channel=GMP_CCS_geocodingservice_v2"
+            defer
+          ></script>
+          <script>
+            function initMap() {
+              var bolivia = { lat: -16.5000, lng: -68.1500 }
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: bolivia
+              });
+              var marker = new google.maps.Marker({
+                position: bolivia,
+                map: map
+              });
+            }
+          </script>
+        </div>
+      </section>
+
+<!-- Contenedor de YouTube Video 
+<section>
+
+  <div id="maps-container">
+    <h2>Esto es Bolivia</h2>
+    <div>
+      <iframe width="100%" height="550" 
+              src="https://www.youtube.com/embed/ij3lwFkk1qI?si=ND6Blx02Tz3kHXZY"
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+-->
+      <div class="bajar1">  </div>
+
+
+      <footer>
+        <h2>Descubre America - Peru </h2>
+        <p>Derechos Reservados</p>
+        <br>
+        <div class="centrado">
+          <div class="espacio">
+              <a href="http://www.facebook.com" target="blank">
+                  <i class="uil uil-facebook" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.twitter.com" target="blank">
+                  <i class="uil uil-twitter" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.youtube.com" target="blank">
+                  <i class="uil uil-youtube" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <br><br>
+      </div>
+    
+    
+    </footer>
+    
+    
+    </body>

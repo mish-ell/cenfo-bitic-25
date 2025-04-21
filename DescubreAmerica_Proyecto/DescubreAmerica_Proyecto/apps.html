@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Real Tikal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/inicio.css" rel="stylesheet">
+    <link href="css/reglas.css" rel="stylesheet">
+         <!-- libreria de animacion -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+</head>
+
+<!-- Placeholder for language selector -->
+<div id="lang-container"></div>
+
+<!-- Script to load it -->
+<script>
+  fetch('lang-selector.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('lang-container').innerHTML = data;
+    });
+</script>
+
+<body>
+    <!-- encabezado -->   
+     <!-- encabezado -->
+     <header>
+        <h1>Tour Maya</h1>
+        <br>
+      </header>
+  
+  
+    <!-- aqui va el menu -->
+      <nav>
+        <ul class="desactivar">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="costarica.html">Costa Rica</a></li>
+            <li><a href="bolivia.html">Bolivia</a></li>
+            <li><a href="chile.html">Chile</a></li>
+            <li><a href="peru.html">Peru</a></li>
+            <li><a href="apps.html">Tour Maya</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+  
+      </nav>
+
+    <!-- contenido principal -->
+    <!-- style="height: 100vh" en caso desactivar la pantalla sin encabezado/pie -->   
+    <div id="container_principal"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</section>
+
+
+
+    <!-- librerias de Three y panolens para su funcionamiento -->
+    <script src="https://pchen66.github.io/js/three/three.min.js"></script>
+    <script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
+
+    <!-- programacion del TOUR 360 -->
+    <script src="js/apps.js"></script>
+
+    <!-- apps para averiguar la posicion XYZ del objeto
+     <script src="js/mapper.js"></script> -->
+
+
+
+    <!-- pie de pagina  -->
+
+    <footer>
+        <h2>Descubre America - Inicio </h2>
+        <p>Derechos Reservados</p>
+        <br>
+        <div class="centrado">
+          <div class="espacio">
+              <a href="http://www.facebook.com" target="blank">
+                  <i class="uil uil-facebook" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.twitter.com" target="blank">
+                  <i class="uil uil-twitter" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.youtube.com" target="blank">
+                  <i class="uil uil-youtube" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <br><br>
+      </div>
+    
+    
+    </footer>
+</body>
+</html>

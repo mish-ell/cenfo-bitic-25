@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Travel</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="imagenes/t.png" type="image/png"> 
+    <link href="css/inicio.css" rel="stylesheet">
+
+            <!-- libreria de animacion -->
+            <link href="css/animate.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+  </head>  
+
+<!-- Placeholder for language selector -->
+<div id="lang-container"></div>
+
+<!-- Script to load it -->
+<script>
+  fetch('lang-selector.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('lang-container').innerHTML = data;
+    });
+</script>
+  
+  <body>
+
+     <!-- encabezado -->
+     <header>
+      <h1>Descubre America</h1>
+      <br>
+    </header>
+
+
+  <!-- aqui va el menu -->
+    <nav>
+      <ul class="desactivar">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="costarica.html">Costa Rica</a></li>
+          <li><a href="bolivia.html">Bolivia</a></li>
+          <li><a href="chile.html">Chile</a></li>
+          <li><a href="peru.html">Peru</a></li>
+          <li><a href="apps.html">Tour Maya</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+
+    </nav>
+
+          
+        <section>
+           <!-- Contenedor de Cultura -->
+           <section>
+            <div id="maps-container">
+              <h2>Costa Rica: El pais mas feliz del mundo</h2>
+          </section>
+      
+
+        <section>
+              <div class="centrado"> 
+              <p class="margen">
+                Costa Rica es un país de América Central con una gran riqueza natural. Sus playas, bosques y volcanes son el hogar de una gran variedad de especies de flora y fauna. Además, Costa Rica es conocida por su compromiso con la sostenibilidad y la protección del medio ambiente. <br> 
+              </p>
+              </section>
+
+              <div class="bajar2">  </div>
+
+        <section>
+
+
+      <!-- Contenedor de Imagenes -->
+      <div class="contenedor-principal">
+        <div class="caja">
+          <img src="imagenes/volcanarenal.png" alt="Volcan Arenal" width="100%" height="300">
+        </div>
+        <div class="caja">
+          <img src="imagenes/volcanturrialba.png" alt="Volcan Turrialba" width="100%" height="300">
+        </div>
+        <div class="caja">
+          <img src="imagenes/volcanpoas.png" alt="Volcan Turrialba" width="100%" height="300">
+        </div>
+
+        <div class="caja">
+          <img src="imagenes/guanacaste.png" alt="Guanacaste" width="100%" height="300">
+        </div>
+      </div>
+      <section>
+        <h3 class="centrado">¡Descubre todo lo que este hermoso país tiene para ofrecer! </h3>
+        <br>
+      
+      <div class="centrado">
+          <a class="botones" href="https://www.visitcostarica.com/" target="blank">Ver más</a>
+        </div>
+        <div class="bajar2">  </div>
+      </section>
+      <!-- Contenedor de Cultura -->
+      <section>
+        <div id="maps-container">
+          <h2>Conoce su Cultura</h2>
+
+      </section>
+
+      <!-- Contenedor de Mapa -->
+
+      <section>
+        <div id="maps-container">
+          <h2>Explora Costa Rica</h2>
+          <div id="map"></div>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Y0vv2PTVdEtvNlcjxlesxjP3f69G3Pg&callback=initMap&v=weekly&solution_channel=GMP_CCS_geocodingservice_v2"
+            defer
+          ></script>
+          <script>
+            function initMap() {
+              var costaRica = {lat: 9.7489, lng: -83.7534};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: costaRica
+              });
+              var marker = new google.maps.Marker({
+                position: costaRica,
+                map: map
+              });
+            }
+          </script>
+        </div>
+      </section>
+
+
+<!-- Contenedor de YouTube Video -->
+ <section>
+
+<div id="maps-container">
+  <h2>Esto es Costa Rica</h2>
+  <div>
+    <iframe width="100%" height="550" 
+            src="https://www.youtube.com/embed/psZc1x1TQNI?si=j3Tidy4mgEZmGalh"
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+      <div class="bajar1">  </div>
+
+
+      <footer>
+        <h2>Descubre America - Costa Rica </h2>
+        <p>Derechos Reservados</p>
+        <br>
+        <div class="centrado">
+          <div class="espacio">
+              <a href="http://www.facebook.com" target="blank">
+                  <i class="uil uil-facebook" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.twitter.com" target="blank">
+                  <i class="uil uil-twitter" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <div class="espacio">
+              <a href="http://www.youtube.com" target="blank">
+                  <i class="uil uil-youtube" style="color:#fff;font-size: 45px"></i>
+              </a>
+          </div>
+          <br><br>
+      </div>
+    
+    
+    </footer>
+    
+    
+    </body>
+
+
+</html> 

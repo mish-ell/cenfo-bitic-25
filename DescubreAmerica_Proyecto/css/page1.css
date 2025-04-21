@@ -1,0 +1,22 @@
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las cajas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.caja {
+  flex: 1;
+  text-align: center;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Para que sean exactamente 3 columnas, puedes limitar el ancho */
+.contenedor-principal {
+  max-width: 1000px;
+  margin: auto;
+}
